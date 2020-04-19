@@ -5,18 +5,20 @@
   
 
   
-  <title>My first article | Hexo</title>
+  <title>matlab 中 gui 程序打包成可执行文件 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一节啦啦啦 第二节啦啦啦">
+  <meta name="description" content="有时候我们在 matlab 中编写好了一个 gui 程序之后，我们希望打包成 .exe 文件，使得我们可以方便地运行程序或者进一步将程序分发给他人使用，我们可以利用 matlab 自带的 deploytool 很容易地实现这个需求. matlab 中 gui 程序打包成可执行文件具体流程 在 matlab 命令行窗口中输入 deploytool 打开 Matlab Compiler, 然后选择 A">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My first article">
-<meta property="og:url" content="http://yoursite.com/2020/04/19/My-first-article/index.html">
+<meta property="og:title" content="matlab 中 gui 程序打包成可执行文件">
+<meta property="og:url" content="http://yoursite.com/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一节啦啦啦 第二节啦啦啦">
+<meta property="og:description" content="有时候我们在 matlab 中编写好了一个 gui 程序之后，我们希望打包成 .exe 文件，使得我们可以方便地运行程序或者进一步将程序分发给他人使用，我们可以利用 matlab 自带的 deploytool 很容易地实现这个需求. matlab 中 gui 程序打包成可执行文件具体流程 在 matlab 命令行窗口中输入 deploytool 打开 Matlab Compiler, 然后选择 A">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-19T15:39:59.000Z">
-<meta property="article:modified_time" content="2020-04-19T15:40:57.876Z">
+<meta property="article:published_time" content="2020-01-28T10:51:17.000Z">
+<meta property="article:modified_time" content="2020-02-19T17:49:36.596Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="matlab">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -66,12 +68,16 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-My-first-article" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-matlab-中将-gui-程序打包成可执行文件" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/04/19/My-first-article/" class="article-date">
-  <time datetime="2020-04-19T15:39:59.000Z" itemprop="datePublished">2020-04-19</time>
+    <a href="/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/" class="article-date">
+  <time datetime="2020-01-28T10:51:17.000Z" itemprop="datePublished">2020-01-28</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/matlab/">matlab</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -80,7 +86,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      My first article
+      matlab 中 gui 程序打包成可执行文件
     </h1>
   
 
@@ -88,25 +94,57 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h1><p>啦啦啦</p>
-<h1 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h1><p>啦啦啦</p>
+        <p>有时候我们在 matlab 中编写好了一个 gui 程序之后，我们希望打包成 .exe 文件，使得我们可以方便地运行程序或者进一步将程序分发给他人使用，我们可以利用 matlab 自带的 <code>deploytool</code> 很容易地实现这个需求.</p>
+<h1 id="matlab-中-gui-程序打包成可执行文件"><a href="#matlab-中-gui-程序打包成可执行文件" class="headerlink" title="matlab 中 gui 程序打包成可执行文件"></a>matlab 中 gui 程序打包成可执行文件</h1><h2 id="具体流程"><a href="#具体流程" class="headerlink" title="具体流程"></a>具体流程</h2><ol>
+<li>在 matlab 命令行窗口中输入 <code>deploytool</code> 打开 <code>Matlab Compiler</code>, 然后选择 <code>Application Compiler</code></li>
+<li>按下图填写打包信息并作相应配置</li>
+</ol>
+<p>** 注 **：在图中第 3 步中选择 <code>Runtime downloaded from web</code> 或者 <code>Runtime included in package</code> 中，建议选择 <code>Runtime included in package</code>, 这个选项可以将程序运行所需要的环境即 <code>Runtime</code> 程序一并打包，从而能够在没有安装 matlab 的电脑中也能使用，选择此选项需要在本地安装好 MATLAB Runtime installer</p>
+<ol>
+<li>开始打包
+打包过程中需要指定好 MATLAB Runtime installer 的路径</li>
+<li>打包完成后会有三个文件夹和一个 html 日志
+其中 <code>for_redistribution</code> 文件夹中包含了带运行环境安装的可执行文件，其余文件夹中打包的都只含有程序，不带运行环境，所以如果另外一台电脑没有相应得运行环境即 <code>Runtime</code> 程序，则需要安装相应程序后才能正常使用</li>
+</ol>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol>
+<li>MATLAB Runtime installer 如何安装？<ul>
+<li>使用 matlab 命令 <code>compiler.runtime.download</code></li>
+<li><a href="https://www.mathworks.com/products/compiler/matlab-runtime.html" target="_blank" rel="noopener">MATLAB Runtime</a> 页面下载</li>
+</ul>
+</li>
+<li>如何查看是否安装好了 MATLAB Runtime installer？<br>使用 matlab 命令 <code>mcrinstaller</code> 如果返回了安装路径则说明安装好了，同时还可以使用 <code>mcrversion</code> 查看其版本号<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1></li>
+<li><a href="https://www.mathworks.com/matlabcentral/answers/7519-is-it-possible-to-run-a-built-exe-without-mcr" target="_blank" rel="noopener">https://www.mathworks.com/matlabcentral/answers/7519-is-it-possible-to-run-a-built-exe-without-mcr</a></li>
+<li><a href="https://www.mathworks.com/help/compiler/mcrinstaller.html?s_tid=srchtitle" target="_blank" rel="noopener">https://www.mathworks.com/help/compiler/mcrinstaller.html?s_tid=srchtitle</a></li>
+<li><a href="https://www.mathworks.com/matlabcentral/answers/93769-how-can-i-distribute-an-application-that-is-developed-using-matlab" target="_blank" rel="noopener">https://www.mathworks.com/matlabcentral/answers/93769-how-can-i-distribute-an-application-that-is-developed-using-matlab</a></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/19/My-first-article/" data-id="ck978b8by0000sguf0jp1466k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/" data-id="ck978b8cc000bsgufcqog4042" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/matlab/" rel="tag">matlab</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
+    <a href="/2020/02/11/Fourier%E5%8F%98%E6%8D%A2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          傅里叶级数与傅里叶变换
+        
+      </div>
+    </a>
   
-    <a href="/2020/04/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2020/01/18/Hexo-blog-%E7%9A%84%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">Hexo blog 的升级与同步方案</div>
     </a>
   
 </nav>
