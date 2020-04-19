@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>My first article</title>
+    <link href="/2020/04/19/My-first-article/"/>
+    <url>/2020/04/19/My-first-article/</url>
+    
+    <content type="html"><![CDATA[<h1 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h1><p>啦啦啦</p><h1 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h1><p>啦啦啦</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2020/04/19/hello-world/"/>
+    <url>/2020/04/19/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="hljs bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="hljs bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="hljs bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SQL第3节课——排序检索数据</title>
+    <link href="/2020/04/03/SQL_Notes_3/"/>
+    <url>/2020/04/03/SQL_Notes_3/</url>
+    
+    <content type="html"><![CDATA[<h1 id="SQL第3节课——排序检索数据"><a href="#SQL第3节课——排序检索数据" class="headerlink" title="SQL第3节课——排序检索数据"></a>SQL第3节课——排序检索数据</h1><h2 id="内容概要"><a href="#内容概要" class="headerlink" title="内容概要"></a>内容概要</h2><ul><li><code>ORDER BY</code>子句</li><li>按多个列排序</li><li>按列位置排序</li><li>指定排序方向<h2 id="ORDER-BY子句"><a href="#ORDER-BY子句" class="headerlink" title="ORDER BY子句"></a><code>ORDER BY</code>子句</h2></li><li>子句：SQL语句由子句构成，有些子句是必须的，而有的可选。我们前一节课学习过<code>SELECT</code>语句的<code>FROM</code>子句</li><li>按某列排序检索数据：<code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名;</code><h2 id="按多个列排序"><a href="#按多个列排序" class="headerlink" title="按多个列排序"></a>按多个列排序</h2></li><li><code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名1,排序列名2;</code><h2 id="按列位置排序"><a href="#按列位置排序" class="headerlink" title="按列位置排序"></a>按列位置排序</h2></li><li><code>SELECT 展示列名1,展示列名2 FROM 表名 ORDER BY 2;</code></li><li>这里<code>ORDER BY</code>后面的数字就对应前面第几个展示列名<h2 id="指定排序方向"><a href="#指定排序方向" class="headerlink" title="指定排序方向"></a>指定排序方向</h2></li><li>SQL排序默认升序</li><li>降序使用<code>DESC</code>关键字： <code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名 DESC;</code></li><li><code>DESC</code>关键字只应用到直接位于其前面的列名</li><li>如果想要在多个列上降序排列，需要对每个列指定<code>DESC</code>关键字</li><li><code>DESC</code>是<code>DESCENDING</code>的缩写，也可使用<code>DESCENDING</code><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2>本节课我们学习了<code>SELECT</code>语句的<code>ORDER BY</code>子句对检索出的数据进行排序，这个子句必须是<code>SELECT</code>语句的最后一个子句。我们学习了如何按某列、多个列(升序、降序)排序</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>SQL</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SQL</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SQL第2节课——SQL中检索数据</title>
+    <link href="/2020/04/02/SQL_Notes_2/"/>
+    <url>/2020/04/02/SQL_Notes_2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="SQL第2节课——SQL中检索数据"><a href="#SQL第2节课——SQL中检索数据" class="headerlink" title="SQL第2节课——SQL中检索数据"></a>SQL第2节课——SQL中检索数据</h1><h2 id="内容概要："><a href="#内容概要：" class="headerlink" title="内容概要："></a>内容概要：</h2><ul><li>SELECT语句</li><li>检索单个列</li><li>检索多个列</li><li>检索所有列</li><li>小结<h2 id="SELECT语句"><a href="#SELECT语句" class="headerlink" title="SELECT语句"></a>SELECT语句</h2></li><li>这种语句是SQL关键字，不能作为表或列的名字</li><li>使用SELECT检索表数据，必须至少给出两条信息，想选择什么以及从什么地方选择<h3 id="检索单个列"><a href="#检索单个列" class="headerlink" title="检索单个列"></a>检索单个列</h3></li><li><code>SELECT 列名 FROM 表名;</code></li><li>MySQL在windows上默认都不区分大小写，这个也可以通过修改配置文件设置成大小写敏感</li><li>许多SQL开发者喜欢对所有SQL关键字使用大写，而对所有列和表名使用小写，这样做使代码更易于阅读和调试<h3 id="检索多个列"><a href="#检索多个列" class="headerlink" title="检索多个列"></a>检索多个列</h3></li><li><code>SELECT 列名1,列名2  FROM 表名;</code><h3 id="检索所有列"><a href="#检索所有列" class="headerlink" title="检索所有列"></a>检索所有列</h3></li><li><code>SELECT * FROM 表名;</code></li><li><code>*</code>是通配符，代表匹配所有<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2>本次课学习了SQL的SELECT语句来检索单个表列、多个表列和所有表列</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>SQL</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SQL</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SQL第1节课——了解SQL</title>
+    <link href="/2020/04/01/SQL_Notes_1/"/>
+    <url>/2020/04/01/SQL_Notes_1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="SQL第1节课——了解SQL"><a href="#SQL第1节课——了解SQL" class="headerlink" title="SQL第1节课——了解SQL"></a>SQL第1节课——了解SQL</h1><h2 id="1-数据库基础"><a href="#1-数据库基础" class="headerlink" title="1.数据库基础"></a>1.数据库基础</h2><h3 id="内容概要"><a href="#内容概要" class="headerlink" title="内容概要"></a>内容概要</h3><ul><li>什么是数据库</li><li>表</li><li>列和数据类型</li><li>行</li><li>主键<h3 id="什么是数据库"><a href="#什么是数据库" class="headerlink" title="什么是数据库"></a>什么是数据库</h3></li><li>数据库是保存有组织的数据的容器</li><li>注意：数据库和数据库软件(或者叫数据库管理系统,DBMS)不应理解为是一样的<h3 id="什么是表"><a href="#什么是表" class="headerlink" title="什么是表"></a>什么是表</h3></li><li>表是某种特定类型数据的结构化清单</li><li>注意：在同一数据库不能使用相同的表名，不同数据库之间可以使用相同的表名</li><li>模式是关于数据库和表的布局及特性的信息</li><li>将数据放入表里，再把表放入库里<h3 id="什么是列和数据类型"><a href="#什么是列和数据类型" class="headerlink" title="什么是列和数据类型"></a>什么是列和数据类型</h3></li><li>列是表中的一个字段，所有表都是由一个或多个列组成</li><li>数据类型是所容许的数据的类型，每个表列都有相应的数据类型，它限制该列中存储的数据</li><li>每列类似java中的“属性”(类的设计)<h3 id="什么是行"><a href="#什么是行" class="headerlink" title="什么是行"></a>什么是行</h3></li><li>行是表中的一个记录</li><li>每一行类似Java中的“对象”<h3 id="什么是主键"><a href="#什么是主键" class="headerlink" title="什么是主键"></a>什么是主键</h3></li><li>主键是唯一标识表中每行的一组列</li><li>注意：良好的习惯是总是定义主键，以便于以后的数据操作和管理<h2 id="2-什么是SQL"><a href="#2-什么是SQL" class="headerlink" title="2.什么是SQL"></a>2.什么是SQL</h2><h3 id="内容概要-1"><a href="#内容概要-1" class="headerlink" title="内容概要"></a>内容概要</h3></li><li>SQL是结构化查询语言(Structured Query Language)的缩写</li><li>SQL是一种专门用来与数据库通信的语言</li><li>标准SQL称为ANSI SQL,所有主要的DBMS都支持</li><li>SQL还有其他扩展，如PL/SQL，其目的是执行特定操作的额外功能，但不是所有DBMS都支持<h2 id="3-MySQL环境搭建"><a href="#3-MySQL环境搭建" class="headerlink" title="3.MySQL环境搭建"></a>3.MySQL环境搭建</h2><h3 id="MySQL安装配置和Navicat-Premium-12可视化连接工具的使用"><a href="#MySQL安装配置和Navicat-Premium-12可视化连接工具的使用" class="headerlink" title="MySQL安装配置和Navicat Premium 12可视化连接工具的使用"></a>MySQL安装配置和Navicat Premium 12可视化连接工具的使用</h3></li><li>具体见B站视频：<a href="https://www.bilibili.com/video/BV1B4411k7ML" target="_blank" rel="noopener">MySQL安装配置和Navicat Premium 12可视化连接工具的使用教程</a></li><li>Tips: navicat中<code>ctrl+shift+r</code>是运行mysql语句的快捷键</li></ul><p>注：配置文件<code>my.ini</code>默认在<code>C:\ProgramData\MySQL\MySQL Server 8.0</code></p><h3 id="MySQL服务的启动与停止"><a href="#MySQL服务的启动与停止" class="headerlink" title="MySQL服务的启动与停止"></a>MySQL服务的启动与停止</h3><ul><li>方法一：右键计算机，选管理，找服务，右键启动与停止</li><li>方法二：管理员身份运行命令行，<code>net stop xxx</code> 停止<code>xxx</code>服务, <code>net start xxx</code>启动<code>xxx</code>服务</li></ul><h3 id="MySQL服务器的登录与退出"><a href="#MySQL服务器的登录与退出" class="headerlink" title="MySQL服务器的登录与退出"></a>MySQL服务器的登录与退出</h3><ul><li>方式1：通过MYSQL自带的客户端，只限root用户</li><li>方式2：通过命令行，<code>mysql [–h 主机名 –P 端口号] –u 用户名 –p密码</code> (退出：<code>exit</code>或<code>quit</code>或<code>\q</code>)</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本次课我们初步了解了SQL, 并搭建起来自己的MySQL环境，为后续学习做好了准备</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>SQL</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SQL</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo blog 中插入pdf</title>
+    <link href="/2020/03/01/test/"/>
+    <url>/2020/03/01/test/</url>
+    
+    <content type="html"><![CDATA[<h1 id="测试在博客中插入pdf文件"><a href="#测试在博客中插入pdf文件" class="headerlink" title="测试在博客中插入pdf文件"></a>测试在博客中插入pdf文件</h1><p>有两种方式可以插入pdf文件</p><ol><li><p>按如下方式插入pdf链接，点击后跳转</p><pre><code class="hljs bash">&lt;a href=<span class="hljs-string">"https://gitandgithub.github.io/2020/03/01/test/admm.pdf"</span>&gt;ADMM算法介绍&lt;/a&gt;</code></pre><p> <a href="https://gitandgithub.github.io/2020/03/01/test/admm.pdf" target="_blank" rel="noopener">ADMM算法介绍</a></p></li><li><p>使用如下代码嵌入pdf文件在博客之中</p> <pre><code class="hljs bash">&lt;embed src=<span class="hljs-string">"https://gitandgithub.github.io/2020/03/01/test/admm.pdf"</span> width=<span class="hljs-string">"100%"</span> height=<span class="hljs-string">"550"</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"application/pdf"</span>&gt;</code></pre> <embed src="https://gitandgithub.github.io/2020/03/01/test/admm.pdf" width="100%" height="550" type="application/pdf"></li></ol><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol><li><a href="https://yuxtech.github.io/2019/04/20/test/" target="_blank" rel="noopener">https://yuxtech.github.io/2019/04/20/test/</a></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Blog</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>次序统计量的分布</title>
+    <link href="/2020/02/26/%E6%AC%A1%E5%BA%8F%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9A%84%E5%88%86%E5%B8%83/"/>
+    <url>/2020/02/26/%E6%AC%A1%E5%BA%8F%E7%BB%9F%E8%AE%A1%E9%87%8F%E7%9A%84%E5%88%86%E5%B8%83/</url>
+    
+    <content type="html"><![CDATA[<h1 id="次序统计量的分布"><a href="#次序统计量的分布" class="headerlink" title="次序统计量的分布"></a>次序统计量的分布</h1><p>设$x_1,\cdots,x_n$是来自总体$X\sim F(x)$的简单随机样本，称$x_{(1)}\le\cdots\le x_{(n)}$为次序统计量，下面探讨$x_{(k)}$的分布函数如何计算。</p><p>记$v_n(x)=\sharp{X_i\le x}$, 则$v_n(x)\sim B(n,F(x))$, 即有<br>$$P(v_n(x)=k)=C_n^kF(x)^k(1-F(x)^{n-k}$$<br>显然我们有<br>$$\begin{aligned}<br>v_n(x)=0&amp;\iff x_{(1)}&gt;x\<br>v_n(x)=n&amp;\iff x_{(n)}\le x\<br>v_n(x)=k&amp;\iff x_{(k)}\le x&lt;x_{(k+1)}, 1\le k &lt; n\<br>v_n(x)\ge k &amp;\iff x_{(k)}\le x, 1\le k &lt; n\<br>\end{aligned}$$<br>因此对任意的$1\le k &lt; n$，我们有<br>$$\begin{aligned}<br>F_{x_{(k)}}(x)&amp;=P(x_{(k)}\le x)=P(v_n(x)\ge k)\<br>&amp;=\sum_{m=k}^nC_n^mF(x)^m(1-F(x))^{n-m}\<br>&amp;\overset{\eqref{eq1}}{=}nC_{n-1}^{k-1}\int_0^{F(x)}t^{k-1}(1-t)^{n-k}dt\<br>&amp;=F_{Beta}(F(x);k,n-k+1)\<br>\end{aligned}$$<br>这说明顺序统计量$x_{(k)}$的分布函数可以由参数$(k,n-k+1)$的Beta分布的分布函数来表示。</p><p>上述证明用到了下面等式<br>$$\begin{equation}\label{eq1}<br>\sum_{m=k}^{n}C_{n}^mp^m(1-p)^{n-m}=\frac{n!}{(k-1)!(n-k)!}\int_0^px^{k-1}(1-x)^{n-k}dx<br>\end{equation}$$</p><p>此等式的证明如下：</p><ol><li>定义$I_k = \int_0^px^{k-1}(1-x)^{n-k}dx$</li><li>由分部积分可得$I_k = \frac1k(1-x)^{n-k}x^k|<em>0^p+\frac{n-k}{k}I</em>{k+1}=\frac1k(1-p)^{n-k}p^k+\frac{n-k}{k}I_{k+1}$</li><li>$\frac{n!}{(k-1)!(n-k)!}I_k=C_n^k(1-p)^{n-k}p^{k}+\frac{n!}{k!(n-k-1)!}I_{k+1}$</li><li>$\frac{n!}{(k-1)!(n-k)!}I_k=C_n^k(1-p)^{n-k}p^{k}+C_n^{k+1}(1-p)^{n-k-1}p^{k+1}+\frac{n!}{(k+1)!(n-k-2)!}I_{k+2}$</li><li>以此类推得证</li></ol><p>注:目前mathjax下数学公式存在的问题和解决方案</p><pre><code class="hljs bash">1. <span class="hljs-comment">#号问题，解决用\sharp</span></code></pre><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol><li><a href="https://math.stackexchange.com/questions/86542/prove-binomnk-1-n1-int-01xk1-xn-kdx-for-0-leq-k-le/86578#86578" target="_blank" rel="noopener">https://math.stackexchange.com/questions/86542/prove-binomnk-1-n1-int-01xk1-xn-kdx-for-0-leq-k-le/86578#86578</a></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>统计</category>
+      
+      <category>统计计算</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>次序统计量</tag>
+      
+      <tag>伽马分布</tag>
+      
+      <tag>二项分布</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>傅里叶级数与傅里叶变换</title>
+    <link href="/2020/02/11/Fourier%E5%8F%98%E6%8D%A2/"/>
+    <url>/2020/02/11/Fourier%E5%8F%98%E6%8D%A2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="傅里叶级数与傅里叶变换"><a href="#傅里叶级数与傅里叶变换" class="headerlink" title="傅里叶级数与傅里叶变换"></a>傅里叶级数与傅里叶变换</h1><h2 id="傅里叶级数"><a href="#傅里叶级数" class="headerlink" title="傅里叶级数"></a>傅里叶级数</h2><p>在线性空间中，我们往往希望把向量分解为标准正交基的线性组合，同样地，对于函数空间也不例外，傅里叶级数正式把周期函数分解为函数空间中的正交三角函数列形成的标准正交基的线性组合。</p><p>我们称 $1,\cos (x),\sin (x),\cdots,\cos (kx),\sin (kx),\cdots$ 为实形三角函数系，称 $e^{ikx}(k=0,\pm1,\pm2,\cdots)$ 为复形三角函数系。它们具有以下特性：</p><ol><li>以 $2\pi$ 为周期</li><li>正交性</li><li>完全性：也就是它们确实构成一组基，不存在与它们都正交的非零可积周期函数，严格证明可参阅潘文杰老师写的《傅里叶分析及应用》P4 定理 1.1</li></ol><p>于是周期为$2\pi$的$f(x)$有以下实型和复型傅里叶级数展开式:<br>$$\begin{aligned}<br>f(x)&amp;=\frac{a_0}{2}+\sum_{k=1}^{\infty}(a_k\cos(kx)+b_k\sin(kx))\<br>    &amp;=\sum_{k=-\infty}^{\infty}c_ke^{ikx}\<br>\end{aligned}$$</p><p>其中$a_k,b_k,c_k$满足以下关系：</p><ol><li>$a_k=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos(kx)dx,k=0,1,2,\cdots$</li><li>$b_k=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin(kx)dx,k=1,2,\cdots$</li><li>$c_k=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)e^{-ikx}dx,k=\cdots,-2,-1,0,1,2,\cdots$</li><li>$c_0=\frac12a_0,c_k=\frac12(a_k-ib_k),c_{-k}=\bar{c_k}=\frac12(a_k+ib_k)$</li></ol><p>若$f(x)$周期为$T&gt;0$,我们可以做变换$\varphi(t)=f(\frac{T}{2\pi}t)$,则$\varphi(t)$具有周期$2\pi$，运用之前结论再通过相应的变换可以得到$f(x)$的傅里叶级数展开：<br>$$\begin{aligned}<br>f(x)=&amp;\frac{a_0}{2}+\sum_{k=1}^{\infty}(a_k\cos(\frac{2\pi k}{T}x)+b_k\sin(\frac{2\pi k}{T}x))\<br>=&amp;\sum_{-\infty}^{\infty}c_ke^{i\frac{2\pi k}{T}x}\<br>\end{aligned}$$<br>其中$a_k,b_k,c_k$满足以下关系：</p><ol><li>$a_k=\frac{2}{T}\int_{\frac{T}{2}}^{\frac{T}{2}}f(x)\cos(\frac{2\pi k}{T}x)dx,k=0,1,2,\cdots$</li><li>$b_k=\frac{2}{T}\int_{\frac{T}{2}}^{\frac{T}{2}}f(x)\sin(\frac{2\pi k}{T}x)dx,k=1,2,\cdots$</li><li>$c_k=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(x)e^{-i\frac{2\pi k}{T}x}dx,k=\cdots,-2,-1,0,1,2,\cdots$</li><li>$c_0=\frac12a_0,c_k=\frac12(a_k-ib_k),c_{-k}=\bar{c_k}=\frac12(a_k+ib_k)$</li></ol><h2 id="傅里叶变换"><a href="#傅里叶变换" class="headerlink" title="傅里叶变换"></a>傅里叶变换</h2><p>实际中我们常常遇到非周期的函数，这些函数无法周期化，从而无法展开成傅里叶级数，但是我们任然希望用三角函数通过叠加来表示它们，此时必定是积分的形式，下面介绍我们如何从傅里叶级数的思想来导出傅里叶变换和傅里叶积分。</p><p>我们考虑$(-\infty,\infty)$上的可积函数$f(x)$,限制在$(-l,l)$上进行傅里叶级数展开，然后令$l$趋于无穷。</p><p>$f(x)$在$(-l,l)$上的傅里叶级数是<br>$$\begin{aligned}<br>f(x)&amp;\sim \sum_{n=-\infty}^{\infty}(\frac{1}{2l}\int_{-l}^{l}f(y)e^{-i\frac{\pi n}{l}y}dy)e^{i\frac{\pi n}{l}x}\<br>&amp;=\sum_{n=-\infty}^{\infty}\frac{1}{2l}\int_{-l}^{l}f(y)e^{i\frac{\pi n}{l}(x-y)}dy\<br>&amp;=\sum_{n=-\infty}^{\infty}\frac{1}{2\pi}\int_{-l}^lf(y)e^{i\frac{\pi n}{l}(x-y)}dy\times\frac{\pi}{l}\<br>&amp;\rightarrow\int_{-\infty}^{\infty}\frac{1}{2\pi}\int_{-\infty}^{\infty}f(y)e^{it(x-y)}dydt\<br>\end{aligned}$$<br>于是若令$c(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(y)e^{-ity}dy$,则有<br>$$f(x)\sim\int_{-\infty}^{\infty}c(t)e^{itx}dt$$<br>我们可以令$\hat{f}(\mu)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i\mu t}dt$,称之为$f(t)$的傅里叶变换，则有<br>$$f(t)=\int_{-\infty}^{\infty}\hat{f}(\mu)e^{2\pi i\mu t}d\mu$$</p><p>这样令的好处是消除了系数，上式称之为傅里叶逆变换，上式右端的积分就叫做傅里叶积分。</p><p>关于傅里叶积分的一种只管的解释可以参看3B1B的视频<a href="https://www.bilibili.com/video/av19141078?from=search&seid=7198706986346515362" target="_blank" rel="noopener">形象展示傅里叶变换</a>，傅里叶变换后得到的$\hat{f}(\mu)$会在所有合成$f(t)$时出现的频率处有较大的谱(也就是$\hat{f}(\mu)$的模)，而合成$f(t)$时没有出现的频率处谱接近于0，从而可以达到分解出波中各个频率的目的。原始$f(t)$的定义域称之为时域，傅里叶变换后$\hat{f}(\mu)$的定义域称之为频域，傅里叶变换就是时域和频域之间的桥梁。</p><h3 id="傅里叶变换的性质和一些常见函数的傅里叶变换"><a href="#傅里叶变换的性质和一些常见函数的傅里叶变换" class="headerlink" title="傅里叶变换的性质和一些常见函数的傅里叶变换"></a>傅里叶变换的性质和一些常见函数的傅里叶变换</h3><h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><ol><li>$F(F(f(t))(t))(\mu)=f(-\mu)$<br>可以从定义中简单计算出来</li><li>$F(f(t-s))(\mu)=F(f(t))(\mu)e^{-2\pi i\mu s}$<br>$\begin{aligned}<br>F(f(t-s))(\mu)&amp;=\int_{-\infty}^{\infty}f(t-s)e^{-2\pi i\mu t}dt\<br>&amp;=\int_{-\infty}^{\infty}f(t)e^{-2\pi i\mu t}e^{-2\pi i\mu s}dt\<br>&amp;=F(f(t))(\mu)e^{-2\pi i\mu s}\<br>\end{aligned}$</li><li>$F(f\star h(t))(\mu)=(F(f(t))\cdot F(h(t)))(\mu)$<br>$\begin{aligned}<br>F(f\star h(t))(\mu)=&amp;\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty} f(\tau) h(t-\tau) d \tau\right] e^{-j 2 \pi \mu t} d t\<br>=&amp; \int_{-\infty}^{\infty} f(\tau)\left[\int_{-\infty}^{\infty} h(t-\tau) e^{-j 2 \pi \mu t} d t\right] d \tau\<br>=&amp;\int_{-\infty}^{\infty}f(\tau)H(\mu)e^{-2\pi i \mu\tau}d\tau\<br>=&amp;F(\mu)H(\mu)\<br>\end{aligned}$</li><li>$F(f\cdot g(t))(\mu)=F(f(t))\star F(g(t))(\mu)$</li><li><h4 id="脉冲函数"><a href="#脉冲函数" class="headerlink" title="脉冲函数"></a>脉冲函数</h4>对连续性信号，单位脉冲函数(unit impluse)是狄拉克分布函数，满足</li><li>$\delta(x)=\begin{cases}\infty,x=0\0,x\neq 0\end{cases}$</li><li>$\int_{-\infty}^{\infty}\delta(x)dx=1$</li></ol><p>对离散型信号，脉冲函数满足</p><ol><li>$\delta(x)=\begin{cases}1,x=0\0,x\neq 0\end{cases}$</li><li>$\sum_{x=-\infty}^{\infty}\delta(x)=1$</li></ol><p>狄拉克分布函数的傅里叶变换满足$F(\delta(t))(\mu)=\int_{-\infty}^{\infty}\delta(t)e^{-2\pi i\mu t}dt=1$,同理可证$F(\delta(t-t_0))(\mu)=e^{-2\pi i\mu t_0}$,于是由傅里叶变换性质1可得$F(e^{-2\pi itt_0})(\mu)=\delta(-\mu-t_0)$,令$-t_0=a$，则有<br>$$F(e^{2\pi iat})(\mu)=\delta(-\mu+a)=\delta(\mu-a)$$</p><p>下面我们考虑脉冲函数加和(impluse train)函数，定义如下<br>$$s_{\Delta T}(t)=\sum_{k=-\infty}^{\infty} \delta(t-k \Delta T)$$<br>它具有周期$\Delta T$,于是有如下傅里叶级数展开<br>$$s_{\Delta T}(t)=\sum_{n=-\infty}^{\infty}c_ne^{i\frac{2\pi n}{\Delta T}t}$$<br>其中<br>$$c_{n}=\frac{1}{\Delta T} \int_{-\Delta T / 2}^{\Delta T / 2} \delta(t) e^{-i \frac{2 \pi n}{\Delta T}} d t=\frac{1}{\Delta T} e^{0}=\frac{1}{\Delta T}$$<br>于是<br>$$<br>s_{\Delta T}(t)=\frac{1}{\Delta T} \sum_{n=-\infty}^{\infty} e^{i \frac{2 \pi n}{\Delta T} t}<br>$$<br>所以有<br>$$F(s_{\Delta T}(t))(\mu)=\frac{1}{\Delta T}\sum_{n=-\infty}^{\infty}F(e^{i \frac{2 \pi n}{\Delta T} t})=\frac{1}{\Delta T}\sum_{n=-\infty}^{\infty}\delta(\mu-\frac{n}{\Delta T})$$</p><h3 id="傅里叶变换在图像处理中的应用"><a href="#傅里叶变换在图像处理中的应用" class="headerlink" title="傅里叶变换在图像处理中的应用"></a>傅里叶变换在图像处理中的应用</h3><p>未完。。待续</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>傅里叶分析</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>傅里叶级数与傅里叶变换</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>matlab 中 gui 程序打包成可执行文件</title>
+    <link href="/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/"/>
+    <url>/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<p>有时候我们在 matlab 中编写好了一个 gui 程序之后，我们希望打包成 .exe 文件，使得我们可以方便地运行程序或者进一步将程序分发给他人使用，我们可以利用 matlab 自带的 <code>deploytool</code> 很容易地实现这个需求.</p><h1 id="matlab-中-gui-程序打包成可执行文件"><a href="#matlab-中-gui-程序打包成可执行文件" class="headerlink" title="matlab 中 gui 程序打包成可执行文件"></a>matlab 中 gui 程序打包成可执行文件</h1><h2 id="具体流程"><a href="#具体流程" class="headerlink" title="具体流程"></a>具体流程</h2><ol><li>在 matlab 命令行窗口中输入 <code>deploytool</code> 打开 <code>Matlab Compiler</code>, 然后选择 <code>Application Compiler</code></li><li>按下图填写打包信息并作相应配置</li></ol><p>** 注 **：在图中第 3 步中选择 <code>Runtime downloaded from web</code> 或者 <code>Runtime included in package</code> 中，建议选择 <code>Runtime included in package</code>, 这个选项可以将程序运行所需要的环境即 <code>Runtime</code> 程序一并打包，从而能够在没有安装 matlab 的电脑中也能使用，选择此选项需要在本地安装好 MATLAB Runtime installer</p><ol><li>开始打包打包过程中需要指定好 MATLAB Runtime installer 的路径</li><li>打包完成后会有三个文件夹和一个 html 日志其中 <code>for_redistribution</code> 文件夹中包含了带运行环境安装的可执行文件，其余文件夹中打包的都只含有程序，不带运行环境，所以如果另外一台电脑没有相应得运行环境即 <code>Runtime</code> 程序，则需要安装相应程序后才能正常使用</li></ol><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol><li>MATLAB Runtime installer 如何安装？<ul><li>使用 matlab 命令 <code>compiler.runtime.download</code></li><li><a href="https://www.mathworks.com/products/compiler/matlab-runtime.html" target="_blank" rel="noopener">MATLAB Runtime</a> 页面下载</li></ul></li><li>如何查看是否安装好了 MATLAB Runtime installer？<br>使用 matlab 命令 <code>mcrinstaller</code> 如果返回了安装路径则说明安装好了，同时还可以使用 <code>mcrversion</code> 查看其版本号<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1></li><li><a href="https://www.mathworks.com/matlabcentral/answers/7519-is-it-possible-to-run-a-built-exe-without-mcr" target="_blank" rel="noopener">https://www.mathworks.com/matlabcentral/answers/7519-is-it-possible-to-run-a-built-exe-without-mcr</a></li><li><a href="https://www.mathworks.com/help/compiler/mcrinstaller.html?s_tid=srchtitle" target="_blank" rel="noopener">https://www.mathworks.com/help/compiler/mcrinstaller.html?s_tid=srchtitle</a></li><li><a href="https://www.mathworks.com/matlabcentral/answers/93769-how-can-i-distribute-an-application-that-is-developed-using-matlab" target="_blank" rel="noopener">https://www.mathworks.com/matlabcentral/answers/93769-how-can-i-distribute-an-application-that-is-developed-using-matlab</a></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>matlab</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>编程</tag>
+      
+      <tag>matlab</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo blog 的升级与同步方案</title>
+    <link href="/2020/01/18/Hexo-blog-%E7%9A%84%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/"/>
+    <url>/2020/01/18/Hexo-blog-%E7%9A%84%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/</url>
+    
+    <content type="html"><![CDATA[<p>个人觉得 Hexo 框架及 Next 主题搭建博客还算比较方便，关于如何使用 Hexo 框架及 Next 主题搭建博客，我们可以在 Hexo 官方网站和 Github 上 Next 主题官方仓库上找到比较详细的教程。本文主要介绍一种 Hexo blog 的升级与同步方案，该方案来自大神 <code>anran758</code>, 该方案可以解决在多设备中频繁切换以及升级 Next 主题的需要。</p><h1 id="Hexo-blog-的升级与同步方案"><a href="#Hexo-blog-的升级与同步方案" class="headerlink" title="Hexo blog 的升级与同步方案"></a>Hexo blog 的升级与同步方案</h1><h2 id="具体流程"><a href="#具体流程" class="headerlink" title="具体流程"></a>具体流程</h2><ol><li><p>创建一个私人（之所以用私人仓库是因为可能会包含个人的某些应用的 <code>appid</code> 或者 <code>secret</code> 等，下同）仓库用于托管博客（站点）。</p> <pre><code class="hljs bash"><span class="hljs-comment"># 初始化 git 项目    </span>git init<span class="hljs-comment"># 添加一个名为 origin 的 remote    </span><span class="hljs-comment"># your_repo_path 是你创建仓库得到的仓库地址   </span>git remote add origin your_repo_path<span class="hljs-comment"># 提交代码    </span>git add .    git commit -m <span class="hljs-string">"new: blog 数据开始进行版本控制"</span><span class="hljs-comment"># 设置上游 (-u) 并推送至远程的 master 分支    </span>git push -u origin master</code></pre></li><li><p>克隆 Next 主题仓库，此时本地 git 仓库会有一个远程分支 <code>Origin/Master</code>, 该分支保留着用于更新（克隆）Next 主题仓库，使用 <code>git checkout -B customize</code> 创建另一个 <code>customize</code> 分支，该分支用于 push 推送到一个新的私人仓库用于管理备份自己的 Next 主题（此时包含了所有个人修改）。</p> <pre><code class="hljs bash"><span class="hljs-comment"># 进入站点根目录</span><span class="hljs-built_in">cd</span> bloggit <span class="hljs-built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next<span class="hljs-comment"># 创建并切换新分支</span>git checkout -B customize<span class="hljs-comment"># 进行主题配置或其他修改操作</span><span class="hljs-comment"># 提交改动 (未推送)</span>git add .git commit -m <span class="hljs-string">"chg: 修改为自定义配置"</span><span class="hljs-comment"># 添加一个名为 userRepo (名字可以自己定义，只要自己能搞清是哪个来源即可) 的新 remote，</span>git remote add userRepo git@github.com:anran758/hexo-xxx-next.git<span class="hljs-comment"># 设置上游 (即以后使用 git pull/status 时默认拉取 userRepo 源的 customize 分支)，并推送指定 remote</span>git push -u userRepo customize<span class="hljs-comment"># 升级 Next 版本</span><span class="hljs-comment"># 从 origin/master 获取最新版本的代码</span><span class="hljs-comment"># 理论上我们不修改 master 分支的代码不会发生冲突</span><span class="hljs-comment"># 切换至 customize 分支</span>git checkout customizegit fetch origin --tagsgit merge --allow-unrelated-histories origin/master</code></pre></li><li><p>创建名为 <code>Username.github.io</code> 的仓库，其中 <code>Username</code> 替换为自己的 Github 用户名，此仓库用于存放 Hexo 部署的网页。</p></li><li><p>重做系统或者更换电脑后，按如下流程操作来接管之前管理的博客，可以将下面的命令保存为 <code>recover.sh</code>, 然后直接执行该脚本文件，一次性还原并升级 <code>next</code> 主题。</p><pre><code class="hljs bash"><span class="hljs-comment">##########准备工作##########</span><span class="hljs-comment"># 执行脚本之前先安装好 git 和 node.js！！！</span><span class="hljs-comment"># 进入站点目录所在目录</span><span class="hljs-built_in">cd</span> D:/Blog<span class="hljs-comment"># 安装 hexo 命令行工具</span>npm install -g hexo-cli<span class="hljs-comment">##########克隆自己的站点和主题仓库##########</span><span class="hljs-comment"># 克隆自己的站点仓库</span>git <span class="hljs-built_in">clone</span> git@github.com:GitAndGithub/hexo.git<span class="hljs-comment"># 进入主题目录</span><span class="hljs-built_in">cd</span> hexo/themes/<span class="hljs-comment"># 克隆自己的主题仓库</span>git <span class="hljs-built_in">clone</span> -o hexo-theme-next git@github.com:GitAndGithub/hexo-theme-next.git<span class="hljs-comment"># 重命名主题文件夹</span>mv hexo-theme-next next<span class="hljs-comment"># 进入 next 主题文件夹</span><span class="hljs-built_in">cd</span> next/<span class="hljs-comment">##########添加远程 next 主题仓库并合并到自己的 next 主题仓库实现主题升级##########</span><span class="hljs-comment"># 添加远程 next 主题仓库，名为 origin</span>git remote add origin git@github.com:theme-next/hexo-theme-next.git<span class="hljs-comment"># git fetch 从远程分支拉取代码</span><span class="hljs-comment"># fetch 常结合 merge 一起用，git fetch + git merge == git pull</span><span class="hljs-comment"># 一般要用 git fetch + git merge, 因为 git pull 会将代码直接合并，造成冲突等无法知道</span><span class="hljs-comment"># fetch 代码下来一般要 git diff orgin/xx 来看一下差异然后再合并，我这里忽略了此步骤</span>git fetch origin --tagsgit merge --allow-unrelated-histories origin/master<span class="hljs-comment"># 如有冲突自行修改主题配置文件解决冲突后再 merge</span><span class="hljs-comment">##########安装和卸载相应依赖##########</span><span class="hljs-comment"># 回到站点目录</span><span class="hljs-built_in">cd</span> D:/Blog/hexo<span class="hljs-comment"># 安装 package.json 中指明的依赖</span>npm install<span class="hljs-comment"># 安装其他自己所用到的依赖以及卸载掉不用的其他依赖</span>npm install hexo-deployer-gitnpm un hexo-renderer-markednpm i hexo-renderer-kramed<span class="hljs-comment">##########保证数学公式渲染需要的更改##########</span><span class="hljs-comment"># 保证博客中 mathjax 数学公式渲染正确，需要修改 kramed 渲染的 inline.js 中相应规则</span>sed -i <span class="hljs-string">'11s/^.*$/e\scape: \/\^\\\\(\[\`\*\\\[\\\]\(\)\#\$+\\-.!_&gt;\]\)\/,/'</span> ./node_modules/kramed/lib/rules/inline.jssed -i <span class="hljs-string">'20s/^.*$/em: \/\^\\\*\(\(?:\\\*\\\*\|\[\\\s\\S\]\)+?\)\\\*\(?!\\\*\)\/,/'</span> ./node_modules/kramed/lib/rules/inline.js<span class="hljs-comment">##########清理、生成和部署博客##########</span><span class="hljs-comment"># 清理、生成和部署博客</span>hexo clean &amp;&amp; hexo g -d</code></pre><p>以后更新博客之后依然记得对博客进行如下的版本控制即可，同样地，可以将如下命令保存为 <code>deploy.sh</code>, 以后直接执行该文件实现一键部署。</p><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> D:/Blog/hexohexo clean &amp;&amp; hexo g -dgit add .git commit -m <span class="hljs-string">"Update: 更新站点配置"</span>git push origin master<span class="hljs-built_in">cd</span> themes/nextgit add .git commit -m <span class="hljs-string">"Update: 更新next主题配置"</span>git push hexo-theme-next customize</code></pre></li></ol><h2 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h2><ul><li>在第 1 步中由于 <code>/theme/next</code> 本身也是一个仓库，git 无法提交嵌套仓库的文件夹，因此需要在 <code>.gitignore</code> 添加配置，忽略该文件夹。  <pre><code class="hljs bash"><span class="hljs-comment"># 其他忽略规则...</span>themes/next/</code></pre></li><li>在第 2 步中可以去 Next 主题官方 Github 仓库 Watch Release 或者在主题配置文件中设置 <code>reminder: true</code> 以便得知最新 Release 版本号，便于及时更新，其中设置 <code>reminder: true</code> 的方法会在每次部署 <code>hexo d</code> 或者本地服务器预览 <code>hexo s</code> 时提示是否是最新版本。更新时如有冲突，可能需要自行手动调整修改配置文件。</li></ul><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol><li><a href="https://zhuanlan.zhihu.com/p/89803184" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/89803184</a></li><li><a href="https://anran758.github.io/blog/2019/11/02/hexo-blog-upgrade-and-version-control/" target="_blank" rel="noopener">https://anran758.github.io/blog/2019/11/02/hexo-blog-upgrade-and-version-control/</a></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Blog</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
