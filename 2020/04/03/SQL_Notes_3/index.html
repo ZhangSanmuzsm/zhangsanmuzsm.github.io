@@ -143,7 +143,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    323 字
+                    324 字
                   </span>
                 
 
@@ -182,22 +182,38 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h1 id="SQL第3节课——排序检索数据"><a href="#SQL第3节课——排序检索数据" class="headerlink" title="SQL第3节课——排序检索数据"></a>SQL第3节课——排序检索数据</h1><h2 id="内容概要"><a href="#内容概要" class="headerlink" title="内容概要"></a>内容概要</h2><ul>
+              <h1 id="sql第3节课排序检索数据"><a class="markdownIt-Anchor" href="#sql第3节课排序检索数据"></a> SQL第3节课——排序检索数据</h1>
+<h2 id="内容概要"><a class="markdownIt-Anchor" href="#内容概要"></a> 内容概要</h2>
+<ul>
 <li><code>ORDER BY</code>子句</li>
 <li>按多个列排序</li>
 <li>按列位置排序</li>
-<li>指定排序方向<h2 id="ORDER-BY子句"><a href="#ORDER-BY子句" class="headerlink" title="ORDER BY子句"></a><code>ORDER BY</code>子句</h2></li>
+<li>指定排序方向</li>
+</ul>
+<h2 id="order-by子句"><a class="markdownIt-Anchor" href="#order-by子句"></a> <code>ORDER BY</code>子句</h2>
+<ul>
 <li>子句：SQL语句由子句构成，有些子句是必须的，而有的可选。我们前一节课学习过<code>SELECT</code>语句的<code>FROM</code>子句</li>
-<li>按某列排序检索数据：<code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名;</code><h2 id="按多个列排序"><a href="#按多个列排序" class="headerlink" title="按多个列排序"></a>按多个列排序</h2></li>
-<li><code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名1,排序列名2;</code><h2 id="按列位置排序"><a href="#按列位置排序" class="headerlink" title="按列位置排序"></a>按列位置排序</h2></li>
+<li>按某列排序检索数据：<code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名;</code></li>
+</ul>
+<h2 id="按多个列排序"><a class="markdownIt-Anchor" href="#按多个列排序"></a> 按多个列排序</h2>
+<ul>
+<li><code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名1,排序列名2;</code></li>
+</ul>
+<h2 id="按列位置排序"><a class="markdownIt-Anchor" href="#按列位置排序"></a> 按列位置排序</h2>
+<ul>
 <li><code>SELECT 展示列名1,展示列名2 FROM 表名 ORDER BY 2;</code></li>
-<li>这里<code>ORDER BY</code>后面的数字就对应前面第几个展示列名<h2 id="指定排序方向"><a href="#指定排序方向" class="headerlink" title="指定排序方向"></a>指定排序方向</h2></li>
+<li>这里<code>ORDER BY</code>后面的数字就对应前面第几个展示列名</li>
+</ul>
+<h2 id="指定排序方向"><a class="markdownIt-Anchor" href="#指定排序方向"></a> 指定排序方向</h2>
+<ul>
 <li>SQL排序默认升序</li>
 <li>降序使用<code>DESC</code>关键字： <code>SELECT 展示列名 FROM 表名 ORDER BY 排序列名 DESC;</code></li>
 <li><code>DESC</code>关键字只应用到直接位于其前面的列名</li>
 <li>如果想要在多个列上降序排列，需要对每个列指定<code>DESC</code>关键字</li>
-<li><code>DESC</code>是<code>DESCENDING</code>的缩写，也可使用<code>DESCENDING</code><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2>本节课我们学习了<code>SELECT</code>语句的<code>ORDER BY</code>子句对检索出的数据进行排序，这个子句必须是<code>SELECT</code>语句的最后一个子句。我们学习了如何按某列、多个列(升序、降序)排序</li>
+<li><code>DESC</code>是<code>DESCENDING</code>的缩写，也可使用<code>DESCENDING</code></li>
 </ul>
+<h2 id="小结"><a class="markdownIt-Anchor" href="#小结"></a> 小结</h2>
+<p>本节课我们学习了<code>SELECT</code>语句的<code>ORDER BY</code>子句对检索出的数据进行排序，这个子句必须是<code>SELECT</code>语句的最后一个子句。我们学习了如何按某列、多个列(升序、降序)排序</p>
 
             </article>
             <hr>

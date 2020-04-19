@@ -143,7 +143,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    463 字
+                    464 字
                   </span>
                 
 
@@ -183,22 +183,35 @@
             
             <article class="markdown-body">
               <p>有时候我们在 matlab 中编写好了一个 gui 程序之后，我们希望打包成 .exe 文件，使得我们可以方便地运行程序或者进一步将程序分发给他人使用，我们可以利用 matlab 自带的 <code>deploytool</code> 很容易地实现这个需求.</p>
-<h1 id="matlab-中-gui-程序打包成可执行文件"><a href="#matlab-中-gui-程序打包成可执行文件" class="headerlink" title="matlab 中 gui 程序打包成可执行文件"></a>matlab 中 gui 程序打包成可执行文件</h1><h2 id="具体流程"><a href="#具体流程" class="headerlink" title="具体流程"></a>具体流程</h2><ol>
+<h1 id="matlab-中-gui-程序打包成可执行文件"><a class="markdownIt-Anchor" href="#matlab-中-gui-程序打包成可执行文件"></a> matlab 中 gui 程序打包成可执行文件</h1>
+<h2 id="具体流程"><a class="markdownIt-Anchor" href="#具体流程"></a> 具体流程</h2>
+<ol>
 <li>在 matlab 命令行窗口中输入 <code>deploytool</code> 打开 <code>Matlab Compiler</code>, 然后选择 <code>Application Compiler</code></li>
-<li>按下图填写打包信息并作相应配置
-<strong> 注 </strong>：在图中第 3 步中选择 <code>Runtime downloaded from web</code> 或者 <code>Runtime included in package</code> 中，建议选择 <code>Runtime included in package</code>, 这个选项可以将程序运行所需要的环境即 <code>Runtime</code> 程序一并打包，从而能够在没有安装 matlab 的电脑中也能使用，选择此选项需要在本地安装好 MATLAB Runtime installer</li>
-<li>开始打包
-打包过程中需要指定好 MATLAB Runtime installer 的路径</li>
-<li>打包完成后会有三个文件夹和一个 html 日志
-其中 <code>for_redistribution</code> 文件夹中包含了带运行环境安装的可执行文件，其余文件夹中打包的都只含有程序，不带运行环境，所以如果另外一台电脑没有相应得运行环境即 <code>Runtime</code> 程序，则需要安装相应程序后才能正常使用</li>
+<li>按下图填写打包信息并作相应配置</li>
 </ol>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol>
-<li>MATLAB Runtime installer 如何安装？<ul>
+
+<p>** 注 **：在图中第 3 步中选择 <code>Runtime downloaded from web</code> 或者 <code>Runtime included in package</code> 中，建议选择 <code>Runtime included in package</code>, 这个选项可以将程序运行所需要的环境即 <code>Runtime</code> 程序一并打包，从而能够在没有安装 matlab 的电脑中也能使用，选择此选项需要在本地安装好 MATLAB Runtime installer</p>
+<ol>
+<li>开始打包</li>
+</ol>
+
+<p>打包过程中需要指定好 MATLAB Runtime installer 的路径<br />
+4. 打包完成后会有三个文件夹和一个 html 日志</p>
+
+<p>其中 <code>for_redistribution</code> 文件夹中包含了带运行环境安装的可执行文件，其余文件夹中打包的都只含有程序，不带运行环境，所以如果另外一台电脑没有相应得运行环境即 <code>Runtime</code> 程序，则需要安装相应程序后才能正常使用</p>
+<h2 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题"></a> 常见问题</h2>
+<ol>
+<li>MATLAB Runtime installer 如何安装？
+<ul>
 <li>使用 matlab 命令 <code>compiler.runtime.download</code></li>
 <li><a href="https://www.mathworks.com/products/compiler/matlab-runtime.html" target="_blank" rel="noopener">MATLAB Runtime</a> 页面下载</li>
 </ul>
 </li>
-<li>如何查看是否安装好了 MATLAB Runtime installer？<br>使用 matlab 命令 <code>mcrinstaller</code> 如果返回了安装路径则说明安装好了，同时还可以使用 <code>mcrversion</code> 查看其版本号<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1></li>
+<li>如何查看是否安装好了 MATLAB Runtime installer？<br />
+使用 matlab 命令 <code>mcrinstaller</code> 如果返回了安装路径则说明安装好了，同时还可以使用 <code>mcrversion</code> 查看其版本号</li>
+</ol>
+<h1 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h1>
+<ol>
 <li><a href="https://www.mathworks.com/matlabcentral/answers/7519-is-it-possible-to-run-a-built-exe-without-mcr" target="_blank" rel="noopener">https://www.mathworks.com/matlabcentral/answers/7519-is-it-possible-to-run-a-built-exe-without-mcr</a></li>
 <li><a href="https://www.mathworks.com/help/compiler/mcrinstaller.html?s_tid=srchtitle" target="_blank" rel="noopener">https://www.mathworks.com/help/compiler/mcrinstaller.html?s_tid=srchtitle</a></li>
 <li><a href="https://www.mathworks.com/matlabcentral/answers/93769-how-can-i-distribute-an-application-that-is-developed-using-matlab" target="_blank" rel="noopener">https://www.mathworks.com/matlabcentral/answers/93769-how-can-i-distribute-an-application-that-is-developed-using-matlab</a></li>
