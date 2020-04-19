@@ -185,10 +185,8 @@
               <p>有时候我们在 matlab 中编写好了一个 gui 程序之后，我们希望打包成 .exe 文件，使得我们可以方便地运行程序或者进一步将程序分发给他人使用，我们可以利用 matlab 自带的 <code>deploytool</code> 很容易地实现这个需求.</p>
 <h1 id="matlab-中-gui-程序打包成可执行文件"><a href="#matlab-中-gui-程序打包成可执行文件" class="headerlink" title="matlab 中 gui 程序打包成可执行文件"></a>matlab 中 gui 程序打包成可执行文件</h1><h2 id="具体流程"><a href="#具体流程" class="headerlink" title="具体流程"></a>具体流程</h2><ol>
 <li>在 matlab 命令行窗口中输入 <code>deploytool</code> 打开 <code>Matlab Compiler</code>, 然后选择 <code>Application Compiler</code></li>
-<li>按下图填写打包信息并作相应配置</li>
-</ol>
-<p>** 注 **：在图中第 3 步中选择 <code>Runtime downloaded from web</code> 或者 <code>Runtime included in package</code> 中，建议选择 <code>Runtime included in package</code>, 这个选项可以将程序运行所需要的环境即 <code>Runtime</code> 程序一并打包，从而能够在没有安装 matlab 的电脑中也能使用，选择此选项需要在本地安装好 MATLAB Runtime installer</p>
-<ol>
+<li>按下图填写打包信息并作相应配置
+<strong> 注 </strong>：在图中第 3 步中选择 <code>Runtime downloaded from web</code> 或者 <code>Runtime included in package</code> 中，建议选择 <code>Runtime included in package</code>, 这个选项可以将程序运行所需要的环境即 <code>Runtime</code> 程序一并打包，从而能够在没有安装 matlab 的电脑中也能使用，选择此选项需要在本地安装好 MATLAB Runtime installer</li>
 <li>开始打包
 打包过程中需要指定好 MATLAB Runtime installer 的路径</li>
 <li>打包完成后会有三个文件夹和一个 html 日志
@@ -246,12 +244,6 @@
                   </div>
                   <div class="post-next col-6">
                     
-                    
-                      <a href="/2020/01/18/Hexo-blog-%E7%9A%84%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/">
-                        <span class="hidden-mobile">Hexo blog 的升级与同步方案</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </div>
                 </div>

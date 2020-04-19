@@ -143,7 +143,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    1.7k 字
+                    1.6k 字
                   </span>
                 
 
@@ -189,30 +189,44 @@
 <li>正交性</li>
 <li>完全性：也就是它们确实构成一组基，不存在与它们都正交的非零可积周期函数，严格证明可参阅潘文杰老师写的《傅里叶分析及应用》P4 定理 1.1</li>
 </ol>
-<p>于是周期为$2\pi$的$f(x)$有以下实型和复型傅里叶级数展开式:<br>$$\begin{aligned}<br>f(x)&amp;=\frac{a_0}{2}+\sum_{k=1}^{\infty}(a_k\cos(kx)+b_k\sin(kx))\<br>    &amp;=\sum_{k=-\infty}^{\infty}c_ke^{ikx}\<br>\end{aligned}$$</p>
-<p>其中$a_k,b_k,c_k$满足以下关系：</p>
+<p>于是周期为$2\pi$的$f(x)$有以下实型和复型傅里叶级数展开式:</p>
+<script type="math/tex; mode=display">\begin{aligned}
+f(x)&=\frac{a_0}{2}+\sum_{k=1}^{\infty}(a_k\cos(kx)+b_k\sin(kx))\\
+    &=\sum_{k=-\infty}^{\infty}c_ke^{ikx}\\
+\end{aligned}</script><p>其中$a_k,b_k,c_k$满足以下关系：</p>
 <ol>
-<li>$a_k=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos(kx)dx,k=0,1,2,\cdots$</li>
-<li>$b_k=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin(kx)dx,k=1,2,\cdots$</li>
-<li>$c_k=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)e^{-ikx}dx,k=\cdots,-2,-1,0,1,2,\cdots$</li>
-<li>$c_0=\frac12a_0,c_k=\frac12(a_k-ib_k),c_{-k}=\bar{c_k}=\frac12(a_k+ib_k)$</li>
+<li>$a<em>k=\frac1\pi\int</em>{-\pi}^{\pi}f(x)\cos(kx)dx,k=0,1,2,\cdots$</li>
+<li>$b<em>k=\frac1\pi\int</em>{-\pi}^{\pi}f(x)\sin(kx)dx,k=1,2,\cdots$</li>
+<li>$c<em>k=\frac{1}{2\pi}\int</em>{-\pi}^{\pi}f(x)e^{-ikx}dx,k=\cdots,-2,-1,0,1,2,\cdots$</li>
+<li>$c<em>0=\frac12a_0,c_k=\frac12(a_k-ib_k),c</em>{-k}=\bar{c_k}=\frac12(a_k+ib_k)$</li>
 </ol>
-<p>若$f(x)$周期为$T&gt;0$,我们可以做变换$\varphi(t)=f(\frac{T}{2\pi}t)$,则$\varphi(t)$具有周期$2\pi$，运用之前结论再通过相应的变换可以得到$f(x)$的傅里叶级数展开：<br>$$\begin{aligned}<br>f(x)=&amp;\frac{a_0}{2}+\sum_{k=1}^{\infty}(a_k\cos(\frac{2\pi k}{T}x)+b_k\sin(\frac{2\pi k}{T}x))\<br>=&amp;\sum_{-\infty}^{\infty}c_ke^{i\frac{2\pi k}{T}x}\<br>\end{aligned}$$<br>其中$a_k,b_k,c_k$满足以下关系：</p>
+<p>若$f(x)$周期为$T&gt;0$,我们可以做变换$\varphi(t)=f(\frac{T}{2\pi}t)$,则$\varphi(t)$具有周期$2\pi$，运用之前结论再通过相应的变换可以得到$f(x)$的傅里叶级数展开：</p>
+<script type="math/tex; mode=display">\begin{aligned}
+f(x)=&\frac{a_0}{2}+\sum_{k=1}^{\infty}(a_k\cos(\frac{2\pi k}{T}x)+b_k\sin(\frac{2\pi k}{T}x))\\
+=&\sum_{-\infty}^{\infty}c_ke^{i\frac{2\pi k}{T}x}\\
+\end{aligned}</script><p>其中$a_k,b_k,c_k$满足以下关系：</p>
 <ol>
-<li>$a_k=\frac{2}{T}\int_{\frac{T}{2}}^{\frac{T}{2}}f(x)\cos(\frac{2\pi k}{T}x)dx,k=0,1,2,\cdots$</li>
-<li>$b_k=\frac{2}{T}\int_{\frac{T}{2}}^{\frac{T}{2}}f(x)\sin(\frac{2\pi k}{T}x)dx,k=1,2,\cdots$</li>
-<li>$c_k=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(x)e^{-i\frac{2\pi k}{T}x}dx,k=\cdots,-2,-1,0,1,2,\cdots$</li>
-<li>$c_0=\frac12a_0,c_k=\frac12(a_k-ib_k),c_{-k}=\bar{c_k}=\frac12(a_k+ib_k)$</li>
+<li>$a<em>k=\frac{2}{T}\int</em>{\frac{T}{2}}^{\frac{T}{2}}f(x)\cos(\frac{2\pi k}{T}x)dx,k=0,1,2,\cdots$</li>
+<li>$b<em>k=\frac{2}{T}\int</em>{\frac{T}{2}}^{\frac{T}{2}}f(x)\sin(\frac{2\pi k}{T}x)dx,k=1,2,\cdots$</li>
+<li>$c<em>k=\frac{1}{T}\int</em>{-\frac{T}{2}}^{\frac{T}{2}}f(x)e^{-i\frac{2\pi k}{T}x}dx,k=\cdots,-2,-1,0,1,2,\cdots$</li>
+<li>$c<em>0=\frac12a_0,c_k=\frac12(a_k-ib_k),c</em>{-k}=\bar{c_k}=\frac12(a_k+ib_k)$</li>
 </ol>
 <h2 id="傅里叶变换"><a href="#傅里叶变换" class="headerlink" title="傅里叶变换"></a>傅里叶变换</h2><p>实际中我们常常遇到非周期的函数，这些函数无法周期化，从而无法展开成傅里叶级数，但是我们任然希望用三角函数通过叠加来表示它们，此时必定是积分的形式，下面介绍我们如何从傅里叶级数的思想来导出傅里叶变换和傅里叶积分。</p>
 <p>我们考虑$(-\infty,\infty)$上的可积函数$f(x)$,限制在$(-l,l)$上进行傅里叶级数展开，然后令$l$趋于无穷。</p>
-<p>$f(x)$在$(-l,l)$上的傅里叶级数是<br>$$\begin{aligned}<br>f(x)&amp;\sim \sum_{n=-\infty}^{\infty}(\frac{1}{2l}\int_{-l}^{l}f(y)e^{-i\frac{\pi n}{l}y}dy)e^{i\frac{\pi n}{l}x}\<br>&amp;=\sum_{n=-\infty}^{\infty}\frac{1}{2l}\int_{-l}^{l}f(y)e^{i\frac{\pi n}{l}(x-y)}dy\<br>&amp;=\sum_{n=-\infty}^{\infty}\frac{1}{2\pi}\int_{-l}^lf(y)e^{i\frac{\pi n}{l}(x-y)}dy\times\frac{\pi}{l}\<br>&amp;\rightarrow\int_{-\infty}^{\infty}\frac{1}{2\pi}\int_{-\infty}^{\infty}f(y)e^{it(x-y)}dydt\<br>\end{aligned}$$<br>于是若令$c(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(y)e^{-ity}dy$,则有<br>$$f(x)\sim\int_{-\infty}^{\infty}c(t)e^{itx}dt$$<br>我们可以令$\hat{f}(\mu)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i\mu t}dt$,称之为$f(t)$的傅里叶变换，则有<br>$$f(t)=\int_{-\infty}^{\infty}\hat{f}(\mu)e^{2\pi i\mu t}d\mu$$</p>
-<p>这样令的好处是消除了系数，上式称之为傅里叶逆变换，上式右端的积分就叫做傅里叶积分。</p>
-<p>关于傅里叶积分的一种只管的解释可以参看3B1B的视频<a href="https://www.bilibili.com/video/av19141078?from=search&seid=7198706986346515362" target="_blank" rel="noopener">形象展示傅里叶变换</a>，傅里叶变换后得到的$\hat{f}(\mu)$会在所有合成$f(t)$时出现的频率处有较大的谱(也就是$\hat{f}(\mu)$的模)，而合成$f(t)$时没有出现的频率处谱接近于0，从而可以达到分解出波中各个频率的目的。原始$f(t)$的定义域称之为时域，傅里叶变换后$\hat{f}(\mu)$的定义域称之为频域，傅里叶变换就是时域和频域之间的桥梁。</p>
+<p>$f(x)$在$(-l,l)$上的傅里叶级数是</p>
+<script type="math/tex; mode=display">\begin{aligned}
+f(x)&\sim \sum_{n=-\infty}^{\infty}(\frac{1}{2l}\int_{-l}^{l}f(y)e^{-i\frac{\pi n}{l}y}dy)e^{i\frac{\pi n}{l}x}\\
+&=\sum_{n=-\infty}^{\infty}\frac{1}{2l}\int_{-l}^{l}f(y)e^{i\frac{\pi n}{l}(x-y)}dy\\
+&=\sum_{n=-\infty}^{\infty}\frac{1}{2\pi}\int_{-l}^lf(y)e^{i\frac{\pi n}{l}(x-y)}dy\times\frac{\pi}{l}\\
+&\rightarrow\int_{-\infty}^{\infty}\frac{1}{2\pi}\int_{-\infty}^{\infty}f(y)e^{it(x-y)}dydt\\
+\end{aligned}</script><p>于是若令$c(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(y)e^{-ity}dy$,则有</p>
+<script type="math/tex; mode=display">f(x)\sim\int_{-\infty}^{\infty}c(t)e^{itx}dt</script><p>我们可以令$\hat{f}(\mu)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i\mu t}dt$,称之为$f(t)$的傅里叶变换，则有</p>
+<script type="math/tex; mode=display">f(t)=\int_{-\infty}^{\infty}\hat{f}(\mu)e^{2\pi i\mu t}d\mu</script><p>这样令的好处是消除了系数，上式称之为傅里叶逆变换，上式右端的积分就叫做傅里叶积分。</p>
+<p>关于傅里叶积分的一种只管的解释可以参看3B1B的视频<a href="https://www.bilibili.com/video/av19141078?from=search&amp;seid=7198706986346515362" target="_blank" rel="noopener">形象展示傅里叶变换</a>，傅里叶变换后得到的$\hat{f}(\mu)$会在所有合成$f(t)$时出现的频率处有较大的谱(也就是$\hat{f}(\mu)$的模)，而合成$f(t)$时没有出现的频率处谱接近于0，从而可以达到分解出波中各个频率的目的。原始$f(t)$的定义域称之为时域，傅里叶变换后$\hat{f}(\mu)$的定义域称之为频域，傅里叶变换就是时域和频域之间的桥梁。</p>
 <h3 id="傅里叶变换的性质和一些常见函数的傅里叶变换"><a href="#傅里叶变换的性质和一些常见函数的傅里叶变换" class="headerlink" title="傅里叶变换的性质和一些常见函数的傅里叶变换"></a>傅里叶变换的性质和一些常见函数的傅里叶变换</h3><h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><ol>
 <li>$F(F(f(t))(t))(\mu)=f(-\mu)$<br>可以从定义中简单计算出来</li>
-<li>$F(f(t-s))(\mu)=F(f(t))(\mu)e^{-2\pi i\mu s}$<br>$\begin{aligned}<br>F(f(t-s))(\mu)&amp;=\int_{-\infty}^{\infty}f(t-s)e^{-2\pi i\mu t}dt\<br>&amp;=\int_{-\infty}^{\infty}f(t)e^{-2\pi i\mu t}e^{-2\pi i\mu s}dt\<br>&amp;=F(f(t))(\mu)e^{-2\pi i\mu s}\<br>\end{aligned}$</li>
-<li>$F(f\star h(t))(\mu)=(F(f(t))\cdot F(h(t)))(\mu)$<br>$\begin{aligned}<br>F(f\star h(t))(\mu)=&amp;\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty} f(\tau) h(t-\tau) d \tau\right] e^{-j 2 \pi \mu t} d t\<br>=&amp; \int_{-\infty}^{\infty} f(\tau)\left[\int_{-\infty}^{\infty} h(t-\tau) e^{-j 2 \pi \mu t} d t\right] d \tau\<br>=&amp;\int_{-\infty}^{\infty}f(\tau)H(\mu)e^{-2\pi i \mu\tau}d\tau\<br>=&amp;F(\mu)H(\mu)\<br>\end{aligned}$</li>
+<li>$F(f(t-s))(\mu)=F(f(t))(\mu)e^{-2\pi i\mu s}$<br>$\begin{aligned}<br>F(f(t-s))(\mu)&amp;=\int<em>{-\infty}^{\infty}f(t-s)e^{-2\pi i\mu t}dt\<br>&amp;=\int</em>{-\infty}^{\infty}f(t)e^{-2\pi i\mu t}e^{-2\pi i\mu s}dt\<br>&amp;=F(f(t))(\mu)e^{-2\pi i\mu s}\<br>\end{aligned}$</li>
+<li>$F(f\star h(t))(\mu)=(F(f(t))\cdot F(h(t)))(\mu)$<br>$\begin{aligned}<br>F(f\star h(t))(\mu)=&amp;\int<em>{-\infty}^{\infty}\left[\int</em>{-\infty}^{\infty} f(\tau) h(t-\tau) d \tau\right] e^{-j 2 \pi \mu t} d t\<br>=&amp; \int<em>{-\infty}^{\infty} f(\tau)\left[\int</em>{-\infty}^{\infty} h(t-\tau) e^{-j 2 \pi \mu t} d t\right] d \tau\<br>=&amp;\int_{-\infty}^{\infty}f(\tau)H(\mu)e^{-2\pi i \mu\tau}d\tau\<br>=&amp;F(\mu)H(\mu)\<br>\end{aligned}$</li>
 <li>$F(f\cdot g(t))(\mu)=F(f(t))\star F(g(t))(\mu)$</li>
 <li><h4 id="脉冲函数"><a href="#脉冲函数" class="headerlink" title="脉冲函数"></a>脉冲函数</h4>对连续性信号，单位脉冲函数(unit impluse)是狄拉克分布函数，满足</li>
 <li>$\delta(x)=\begin{cases}\infty,x=0\0,x\neq 0\end{cases}$</li>
@@ -223,9 +237,14 @@
 <li>$\delta(x)=\begin{cases}1,x=0\0,x\neq 0\end{cases}$</li>
 <li>$\sum_{x=-\infty}^{\infty}\delta(x)=1$</li>
 </ol>
-<p>狄拉克分布函数的傅里叶变换满足$F(\delta(t))(\mu)=\int_{-\infty}^{\infty}\delta(t)e^{-2\pi i\mu t}dt=1$,同理可证$F(\delta(t-t_0))(\mu)=e^{-2\pi i\mu t_0}$,于是由傅里叶变换性质1可得$F(e^{-2\pi itt_0})(\mu)=\delta(-\mu-t_0)$,令$-t_0=a$，则有<br>$$F(e^{2\pi iat})(\mu)=\delta(-\mu+a)=\delta(\mu-a)$$</p>
-<p>下面我们考虑脉冲函数加和(impluse train)函数，定义如下<br>$$s_{\Delta T}(t)=\sum_{k=-\infty}^{\infty} \delta(t-k \Delta T)$$<br>它具有周期$\Delta T$,于是有如下傅里叶级数展开<br>$$s_{\Delta T}(t)=\sum_{n=-\infty}^{\infty}c_ne^{i\frac{2\pi n}{\Delta T}t}$$<br>其中<br>$$c_{n}=\frac{1}{\Delta T} \int_{-\Delta T / 2}^{\Delta T / 2} \delta(t) e^{-i \frac{2 \pi n}{\Delta T}} d t=\frac{1}{\Delta T} e^{0}=\frac{1}{\Delta T}$$<br>于是<br>$$<br>s_{\Delta T}(t)=\frac{1}{\Delta T} \sum_{n=-\infty}^{\infty} e^{i \frac{2 \pi n}{\Delta T} t}<br>$$<br>所以有<br>$$F(s_{\Delta T}(t))(\mu)=\frac{1}{\Delta T}\sum_{n=-\infty}^{\infty}F(e^{i \frac{2 \pi n}{\Delta T} t})=\frac{1}{\Delta T}\sum_{n=-\infty}^{\infty}\delta(\mu-\frac{n}{\Delta T})$$</p>
-<h3 id="傅里叶变换在图像处理中的应用"><a href="#傅里叶变换在图像处理中的应用" class="headerlink" title="傅里叶变换在图像处理中的应用"></a>傅里叶变换在图像处理中的应用</h3><p>未完。。待续</p>
+<p>狄拉克分布函数的傅里叶变换满足$F(\delta(t))(\mu)=\int_{-\infty}^{\infty}\delta(t)e^{-2\pi i\mu t}dt=1$,同理可证$F(\delta(t-t_0))(\mu)=e^{-2\pi i\mu t_0}$,于是由傅里叶变换性质1可得$F(e^{-2\pi itt_0})(\mu)=\delta(-\mu-t_0)$,令$-t_0=a$，则有</p>
+<script type="math/tex; mode=display">F(e^{2\pi iat})(\mu)=\delta(-\mu+a)=\delta(\mu-a)</script><p>下面我们考虑脉冲函数加和(impluse train)函数，定义如下</p>
+<script type="math/tex; mode=display">s_{\Delta T}(t)=\sum_{k=-\infty}^{\infty} \delta(t-k \Delta T)</script><p>它具有周期$\Delta T$,于是有如下傅里叶级数展开</p>
+<script type="math/tex; mode=display">s_{\Delta T}(t)=\sum_{n=-\infty}^{\infty}c_ne^{i\frac{2\pi n}{\Delta T}t}</script><p>其中</p>
+<script type="math/tex; mode=display">c_{n}=\frac{1}{\Delta T} \int_{-\Delta T / 2}^{\Delta T / 2} \delta(t) e^{-i \frac{2 \pi n}{\Delta T}} d t=\frac{1}{\Delta T} e^{0}=\frac{1}{\Delta T}</script><p>于是</p>
+<script type="math/tex; mode=display">
+s_{\Delta T}(t)=\frac{1}{\Delta T} \sum_{n=-\infty}^{\infty} e^{i \frac{2 \pi n}{\Delta T} t}</script><p>所以有</p>
+<script type="math/tex; mode=display">F(s_{\Delta T}(t))(\mu)=\frac{1}{\Delta T}\sum_{n=-\infty}^{\infty}F(e^{i \frac{2 \pi n}{\Delta T} t})=\frac{1}{\Delta T}\sum_{n=-\infty}^{\infty}\delta(\mu-\frac{n}{\Delta T})</script><h3 id="傅里叶变换在图像处理中的应用"><a href="#傅里叶变换在图像处理中的应用" class="headerlink" title="傅里叶变换在图像处理中的应用"></a>傅里叶变换在图像处理中的应用</h3><p>未完。。待续</p>
 
             </article>
             <hr>
@@ -466,6 +485,45 @@
   </script>
 
 
+
+
+
+
+
+
+<!-- MathJax -->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+            const display = !!node.type.match(/; *mode=display/);
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+            const text = document.createTextNode('');
+            node.parentNode.replaceChild(text, node);
+            math.start = { node: text, delim: '', n: 0 };
+            math.end = { node: text, delim: '', n: 0 };
+            doc.math.push(math);
+          });
+        }, '', false],
+        insertedScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            let target = node.parentNode;
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax');
+            }
+          });
+        }, '', false]
+      }
+    }
+  };
+</script>
+
+<script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
 
 
 
