@@ -460,7 +460,7 @@ F_{x_{(k)}}(x)&=P(x_{(k)}\le x)=P(v_n(x)\ge k)\\
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>
@@ -485,12 +485,12 @@ F_{x_{(k)}}(x)&=P(x_{(k)}\le x)=P(v_n(x)\ge k)\\
 
 
 
+  
 
-
-
-<!-- KaTeX -->
-<link  rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css" />
-
+  
+    <!-- KaTeX -->
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css" />
+  
 
 
 

@@ -522,7 +522,7 @@ F(f\star h(t))(\mu)=&amp;\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty} f(
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>
@@ -547,12 +547,12 @@ F(f\star h(t))(\mu)=&amp;\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty} f(
 
 
 
+  
 
-
-
-<!-- KaTeX -->
-<link  rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css" />
-
+  
+    <!-- KaTeX -->
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css" />
+  
 
 
 
