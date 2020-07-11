@@ -213,15 +213,15 @@
 <li>在 matlab 命令行窗口中输入 <code>deploytool</code> 打开 <code>Matlab Compiler</code>, 然后选择 <code>Application Compiler</code></li>
 <li>按下图填写打包信息并作相应配置</li>
 </ol>
-
+<img src="/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/exe1.png" srcset="/img/loading.gif" class="" title="填写打包信息并作相应配置">
 <p>** 注 **：在图中第 3 步中选择 <code>Runtime downloaded from web</code> 或者 <code>Runtime included in package</code> 中，建议选择 <code>Runtime included in package</code>, 这个选项可以将程序运行所需要的环境即 <code>Runtime</code> 程序一并打包，从而能够在没有安装 matlab 的电脑中也能使用，选择此选项需要在本地安装好 MATLAB Runtime installer</p>
 <ol>
 <li>开始打包</li>
 </ol>
-
+<img src="/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/exe2.png" srcset="/img/loading.gif" class="" title="开始打包">
 <p>打包过程中需要指定好 MATLAB Runtime installer 的路径<br />
 4. 打包完成后会有三个文件夹和一个 html 日志</p>
-
+<img src="/2020/01/28/matlab-%E4%B8%AD%E5%B0%86-gui-%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/exe3.png" srcset="/img/loading.gif" class="" title="三个文件夹和一个 html 日志">
 <p>其中 <code>for_redistribution</code> 文件夹中包含了带运行环境安装的可执行文件，其余文件夹中打包的都只含有程序，不带运行环境，所以如果另外一台电脑没有相应得运行环境即 <code>Runtime</code> 程序，则需要安装相应程序后才能正常使用</p>
 <h2 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题"></a> 常见问题</h2>
 <ol>
