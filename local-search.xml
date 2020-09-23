@@ -31,6 +31,33 @@
   
   
   <entry>
+    <title>Leetcode刷题2.两数相加</title>
+    <link href="/2020/09/22/leetcode_2_%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/"/>
+    <url>/2020/09/22/leetcode_2_%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="2-两数相加"><a class="markdownIt-Anchor" href="#2-两数相加"></a> <a href="https://leetcode-cn.com/problems/add-two-numbers/" target="_blank" rel="noopener">2. 两数相加</a></h1><p>给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。</p><p>如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。</p><p>您可以假设除了数字 0 之外，这两个数都不会以 0 开头。</p><p><strong>示例：</strong></p><pre><code class="hljs angelscript">输入：(<span class="hljs-number">2</span> -&gt; <span class="hljs-number">4</span> -&gt; <span class="hljs-number">3</span>) + (<span class="hljs-number">5</span> -&gt; <span class="hljs-number">6</span> -&gt; <span class="hljs-number">4</span>)输出：<span class="hljs-number">7</span> -&gt; <span class="hljs-number">0</span> -&gt; <span class="hljs-number">8</span>原因：<span class="hljs-number">342</span> + <span class="hljs-number">465</span> = <span class="hljs-number">807</span></code></pre><h1 id="方法一"><a class="markdownIt-Anchor" href="#方法一"></a> 方法一</h1><pre><code class="hljs python"><span class="hljs-comment"># Definition for singly-linked list.</span><span class="hljs-comment"># class ListNode:</span><span class="hljs-comment">#     def __init__(self, x):</span><span class="hljs-comment">#         self.val = x</span><span class="hljs-comment">#         self.next = None</span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">addTwoNumbers</span><span class="hljs-params">(self, l1: ListNode, l2: ListNode)</span> -&gt; ListNode:</span>        <span class="hljs-comment"># 创建一个结点值为 None 的头结点, dummy 和 p 指向头结点, dummy 用来最后返回, p 用来遍历</span>        dummy = p = ListNode(<span class="hljs-literal">None</span>)                  s = <span class="hljs-number">0</span>               <span class="hljs-comment"># 初始化进位 s 为 0</span>        <span class="hljs-keyword">while</span> l1 <span class="hljs-keyword">or</span> l2 <span class="hljs-keyword">or</span> s:            <span class="hljs-comment"># 如果 l1 或 l2 存在, 则取l1的值 + l2的值 + s(s初始为0, 如果下面有进位1, 下次加上)</span>            s += (l1.val <span class="hljs-keyword">if</span> l1 <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>) + (l2.val <span class="hljs-keyword">if</span> l2 <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>)              p.next = ListNode(s % <span class="hljs-number">10</span>)       <span class="hljs-comment"># p.next 指向新链表, 用来创建一个新的链表</span>            p = p.next                      <span class="hljs-comment"># p 向后遍历</span>            s //= <span class="hljs-number">10</span>                        <span class="hljs-comment"># 有进位情况则取模, eg. s = 18, 18 // 10 = 1</span>            l1 = l1.next <span class="hljs-keyword">if</span> l1 <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>    <span class="hljs-comment"># 如果l1存在, 则向后遍历, 否则为 None</span>            l2 = l2.next <span class="hljs-keyword">if</span> l2 <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>    <span class="hljs-comment"># 如果l2存在, 则向后遍历, 否则为 None</span>        <span class="hljs-keyword">return</span> dummy.next   <span class="hljs-comment"># 返回 dummy 的下一个节点, 因为 dummy 指向的是空的头结点, 下一个节点才是新建链表的后序节点</span></code></pre><pre><code class="hljs django"><span class="hljs-template-tag">&#123;% <span class="hljs-name">asset_img</span> 1.png 算法原理的简单示例 %&#125;</span></code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Leetcode</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Leetcode</tag>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>《战胜拖延症》读书小结</title>
     <link href="/2020/07/20/%E3%80%8A%E6%88%98%E8%83%9C%E6%8B%96%E5%BB%B6%E7%97%87%E3%80%8B%E8%AF%BB%E4%B9%A6%E5%B0%8F%E7%BB%93/"/>
     <url>/2020/07/20/%E3%80%8A%E6%88%98%E8%83%9C%E6%8B%96%E5%BB%B6%E7%97%87%E3%80%8B%E8%AF%BB%E4%B9%A6%E5%B0%8F%E7%BB%93/</url>

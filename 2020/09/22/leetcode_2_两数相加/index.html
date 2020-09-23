@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="San Mu">
   <meta name="keywords" content="">
-  <title>Leetcode刷题1.两数之和 - ZhangSanmu&#39;s space</title>
+  <title>Leetcode刷题2.两数相加 - ZhangSanmu&#39;s space</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -146,7 +146,7 @@
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
-                Leetcode刷题1.两数之和
+                Leetcode刷题2.两数相加
               
             </span>
 
@@ -165,7 +165,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      307 字
+      412 字
     </span>
   
 
@@ -175,7 +175,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      5
        分钟
     </span>
   
@@ -206,47 +206,36 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h1 id="1-两数之和"><a class="markdownIt-Anchor" href="#1-两数之和"></a> <a href="https://leetcode-cn.com/problems/two-sum/" target="_blank" rel="noopener">1. 两数之和</a></h1>
-<p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。</p>
-<p><strong>示例:</strong></p>
-<pre><code class="hljs angelscript">给定 nums = [<span class="hljs-number">2</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>, <span class="hljs-number">15</span>], target = <span class="hljs-number">9</span>
+              <h1 id="2-两数相加"><a class="markdownIt-Anchor" href="#2-两数相加"></a> <a href="https://leetcode-cn.com/problems/add-two-numbers/" target="_blank" rel="noopener">2. 两数相加</a></h1>
+<p>给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。</p>
+<p>如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。</p>
+<p>您可以假设除了数字 0 之外，这两个数都不会以 0 开头。</p>
+<p><strong>示例：</strong></p>
+<pre><code class="hljs angelscript">输入：(<span class="hljs-number">2</span> -&gt; <span class="hljs-number">4</span> -&gt; <span class="hljs-number">3</span>) + (<span class="hljs-number">5</span> -&gt; <span class="hljs-number">6</span> -&gt; <span class="hljs-number">4</span>)
+输出：<span class="hljs-number">7</span> -&gt; <span class="hljs-number">0</span> -&gt; <span class="hljs-number">8</span>
+原因：<span class="hljs-number">342</span> + <span class="hljs-number">465</span> = <span class="hljs-number">807</span></code></pre>
+<h1 id="方法一"><a class="markdownIt-Anchor" href="#方法一"></a> 方法一</h1>
+<pre><code class="hljs python"><span class="hljs-comment"># Definition for singly-linked list.</span>
+<span class="hljs-comment"># class ListNode:</span>
+<span class="hljs-comment">#     def __init__(self, x):</span>
+<span class="hljs-comment">#         self.val = x</span>
+<span class="hljs-comment">#         self.next = None</span>
 
-因为 nums[<span class="hljs-number">0</span>] + nums[<span class="hljs-number">1</span>] = <span class="hljs-number">2</span> + <span class="hljs-number">7</span> = <span class="hljs-number">9</span>
-所以返回 [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>]</code></pre>
-<h2 id="方法一暴力穷举on2"><a class="markdownIt-Anchor" href="#方法一暴力穷举on2"></a> 方法一（暴力穷举，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>）</h2>
-<pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span><span class="hljs-params">(object)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">twoSum</span><span class="hljs-params">(self, nums, target)</span>:</span>
-        <span class="hljs-string">"""</span>
-<span class="hljs-string">        :type nums: List[int]</span>
-<span class="hljs-string">        :type target: int</span>
-<span class="hljs-string">        :rtype: List[int]</span>
-<span class="hljs-string">        """</span>
-        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(nums)):
-            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(i+<span class="hljs-number">1</span>,len(nums)):
-                <span class="hljs-keyword">if</span> nums[i] + nums[j] == target:
-                    <span class="hljs-keyword">return</span> [i,j]</code></pre>
-<pre><code class="hljs angelscript">执行用时：
-<span class="hljs-number">3208</span> ms, 在所有 Python 提交中击败了<span class="hljs-number">26.82</span>%的用户
-内存消耗：
-<span class="hljs-number">13.2</span> MB, 在所有 Python 提交中击败了<span class="hljs-number">63.01</span>%的用户</code></pre>
-<h2 id="方法二字典模拟哈希表on"><a class="markdownIt-Anchor" href="#方法二字典模拟哈希表on"></a> 方法二（字典模拟哈希表，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>)</h2>
-<pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span><span class="hljs-params">(object)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">twoSum</span><span class="hljs-params">(self, nums, target)</span>:</span>
-        <span class="hljs-string">"""</span>
-<span class="hljs-string">        :type nums: List[int]</span>
-<span class="hljs-string">        :type target: int</span>
-<span class="hljs-string">        :rtype: List[int]</span>
-<span class="hljs-string">        """</span>
-        hashmap = &#123;&#125;
-        <span class="hljs-keyword">for</span> i, num <span class="hljs-keyword">in</span> enumerate(nums):
-            <span class="hljs-keyword">if</span> target - num <span class="hljs-keyword">in</span> hashmap:
-                <span class="hljs-keyword">return</span> [hashmap[target-num], i]
-            hashmap[num] = i</code></pre>
-<pre><code class="hljs angelscript">执行用时：
-<span class="hljs-number">20</span> ms, 在所有 Python 提交中击败了<span class="hljs-number">97.65</span>%的用户
-内存消耗：
-<span class="hljs-number">13.3</span> MB, 在所有 Python 提交中击败了<span class="hljs-number">41.24</span>%的用户</code></pre>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">addTwoNumbers</span><span class="hljs-params">(self, l1: ListNode, l2: ListNode)</span> -&gt; ListNode:</span>
+        <span class="hljs-comment"># 创建一个结点值为 None 的头结点, dummy 和 p 指向头结点, dummy 用来最后返回, p 用来遍历</span>
+        dummy = p = ListNode(<span class="hljs-literal">None</span>)          
+        s = <span class="hljs-number">0</span>               <span class="hljs-comment"># 初始化进位 s 为 0</span>
+        <span class="hljs-keyword">while</span> l1 <span class="hljs-keyword">or</span> l2 <span class="hljs-keyword">or</span> s:
+            <span class="hljs-comment"># 如果 l1 或 l2 存在, 则取l1的值 + l2的值 + s(s初始为0, 如果下面有进位1, 下次加上)</span>
+            s += (l1.val <span class="hljs-keyword">if</span> l1 <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>) + (l2.val <span class="hljs-keyword">if</span> l2 <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>)  
+            p.next = ListNode(s % <span class="hljs-number">10</span>)       <span class="hljs-comment"># p.next 指向新链表, 用来创建一个新的链表</span>
+            p = p.next                      <span class="hljs-comment"># p 向后遍历</span>
+            s //= <span class="hljs-number">10</span>                        <span class="hljs-comment"># 有进位情况则取模, eg. s = 18, 18 // 10 = 1</span>
+            l1 = l1.next <span class="hljs-keyword">if</span> l1 <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>    <span class="hljs-comment"># 如果l1存在, 则向后遍历, 否则为 None</span>
+            l2 = l2.next <span class="hljs-keyword">if</span> l2 <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>    <span class="hljs-comment"># 如果l2存在, 则向后遍历, 否则为 None</span>
+        <span class="hljs-keyword">return</span> dummy.next   <span class="hljs-comment"># 返回 dummy 的下一个节点, 因为 dummy 指向的是空的头结点, 下一个节点才是新建链表的后序节点</span></code></pre>
+<pre><code class="hljs django"><span class="hljs-template-tag">&#123;% <span class="hljs-name">asset_img</span> 1.png 算法原理的简单示例 %&#125;</span></code></pre>
             </article>
             <hr>
             <div>
@@ -278,12 +267,18 @@
                   <div class="post-prev col-6">
                     
                     
+                      <a href="/2020/09/22/Leetcode_1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Leetcode刷题1.两数之和</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/09/22/leetcode_2_%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/">
-                        <span class="hidden-mobile">Leetcode刷题2.两数相加</span>
+                      <a href="/2020/07/20/%E3%80%8A%E6%88%98%E8%83%9C%E6%8B%96%E5%BB%B6%E7%97%87%E3%80%8B%E8%AF%BB%E4%B9%A6%E5%B0%8F%E7%BB%93/">
+                        <span class="hidden-mobile">《战胜拖延症》读书小结</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
