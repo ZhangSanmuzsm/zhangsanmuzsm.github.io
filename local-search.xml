@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>优化资料整理</title>
+    <link href="/2020/11/25/%E4%BC%98%E5%8C%96%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"/>
+    <url>/2020/11/25/%E4%BC%98%E5%8C%96%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<ol><li><p><a href="https://arxiv.org/pdf/1803.06573.pdf" target="_blank" rel="noopener">关于凸、强凸、Lipschitz连续梯度的等价定义以及强凸和Lipschitz连续梯度的Fenchel对偶性质</a></p></li><li><p>GD在各种情形下的收敛性分析</p><ul><li><a href="https://zhuanlan.zhihu.com/p/66229525" target="_blank" rel="noopener">梯度下降在强凸/凸/非凸下的收敛速率证明</a></li><li><a href="https://francisbach.com/computer-aided-analyses/" target="_blank" rel="noopener">Computer-aided analyses in optimization</a></li><li><a href="https://zhuanlan.zhihu.com/p/27644403" target="_blank" rel="noopener">当我们谈论收敛速度时，我们都在谈什么？</a></li></ul><p>以后遇到不错的资料再添加</p></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>优化</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>优化</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Leetcode刷题1.两数之和</title>
     <link href="/2020/09/22/Leetcode_1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
     <url>/2020/09/22/Leetcode_1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
